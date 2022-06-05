@@ -18,7 +18,7 @@ function Hotels(xml) {
 
     for (let i = 0; i < 9; i++) {
         let nameArr = xmlDoc.getElementsByTagName("Name")[i].childNodes[0].nodeValue.split(" ");
-        let addressArr = xmlDoc.getElementsByTagName("AddressLine")[i].childNodes[0].nodeValue.split(',');
+        let addressArr = xmlDoc.getElementsByTagName("AddressLine")[i].childNodes[0].nodeValue;
         let price = xmlDoc.getElementsByTagName("Hotel")[i].getAttribute('Price');
 
         let a = 0;
