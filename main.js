@@ -38,9 +38,10 @@ function Hotels(xml) {
         function Address(addressArr) {
             for (let i = 0; i < addressArr.length; i++) {
                 addressArr[i] = addressArr[i].toLowerCase();
+                console.log(addressArr);
             }
             for (let i = 0; i < addressArr.length; i++) {
-                if (addressArr[i] == ' new york' || addressArr[i] == ' ny') {
+                if (addressArr[i] == ' new york' || addressArr[i] == ' ny' || addressArr[i] == ' new york city') {
                     a += true
                 } else {
                      false
@@ -50,7 +51,7 @@ function Hotels(xml) {
 
         Address(addressArr);
 
-        if (a > 2 ) {
+        if (a > 1 ) {
             let name = document.createElement('li')
             name.innerHTML = xmlDoc.getElementsByTagName("Name")[i].childNodes[0].nodeValue;
             console.log(name)
