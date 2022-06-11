@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="Hotels.xsl" version='1.0'?>
+
 <Hotels>
 	<Hotel Price="250 USD per night">
 		<Name>Graduate Lincoln</Name>
