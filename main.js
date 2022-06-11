@@ -18,7 +18,7 @@ function Hotels(xml) {
 
     for (let i = 0; i < 9; i++) {
         let nameArr = xmlDoc.getElementsByTagName("Name")[i].childNodes[0].nodeValue.split(" ");
-        let addressArr = xmlDoc.getElementsByTagName("AddressLine")[i].childNodes[0].nodeValue.split(',');
+        let addressStr = xmlDoc.getElementsByTagName("AddressLine")[i].childNodes[0].nodeValue;
         let price = xmlDoc.getElementsByTagName("Hotel")[i].getAttribute('Price');
 
         let a = 0;
@@ -35,6 +35,7 @@ function Hotels(xml) {
 
         Name(nameArr);
 
+<<<<<<< HEAD
         function Address(addressArr) {
             for (let i = 0; i < addressArr.length; i++) {
                 addressArr[i] = addressArr[i].toLowerCase();
@@ -52,9 +53,23 @@ function Hotels(xml) {
         Address(addressArr);
 
         if (a > 1 ) {
+=======
+        function Address(addressStr) {
+            addressStr = addressStr.toLowerCase();
+            if (addressStr.indexOf('new york') || addressStr.indexOf('ny')) {
+                a += true;
+            } else {
+                false;
+            }
+        }
+
+        Address(addressStr);
+        console.log(a)
+        
+        if (a > 2 ) {
+>>>>>>> develop
             let name = document.createElement('li')
             name.innerHTML = xmlDoc.getElementsByTagName("Name")[i].childNodes[0].nodeValue;
-            console.log(name)
             column1.appendChild(name)
             let priceElem = document.createElement('li')
             priceElem.innerHTML = price;
