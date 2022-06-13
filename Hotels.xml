@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Hotels.xsl" version='1.0'?>
-<?xsl-stylesheet href="my-style.css" type="text/css"?>
+<?xml-stylesheet type="text/xsl" href="Hotels.xsl"?>
+
 <Hotels>
 	<Hotel Price="250 USD per night">
 		<Name>Graduate Lincoln</Name>
@@ -74,8 +74,6 @@
 			<State>South Carolina</State>
 		</Address>
 	</Hotel>
-	
-	
 	<Hotel Price="264 USD per night">
 		<Name>Martinique New York on Broadway, Curio Collection by Hilton</Name>
 		<Address>
